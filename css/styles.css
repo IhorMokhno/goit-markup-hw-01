@@ -15,6 +15,7 @@
 body{
 color: var(--dark-title-main-color-color);
 font-family: var(--main-font-family);
+margin: 0;
 }
 
 .text{
@@ -45,20 +46,16 @@ color: var(--dark-title-main-color);
 .list{
 list-style-type: none;
 }
+
 .button{
 border: none;
 font-family: var(--main-font-family);
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
-line-height: 19px;
+line-height: 1.2;
 letter-spacing: 0.04em;
-}
-
-
-.button:hover,
-.button:active{
 cursor: pointer;
-} 
+}
 
 /* LOGO */
 .logo{
@@ -80,12 +77,19 @@ color: var(--dark-title-main-color);
 color: var(--white-logo-color);
 }
 
-
+.title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: var(--dark-title-main-color);
+}
+    
 
 /* header */
 /* Навигация */
 .link-nav{
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -124,19 +128,29 @@ line-height: 1 ;
 letter-spacing: 0.02em;
 }
 
-.hero> .button{
+.hero-button{
 color: var(--white-text-color) ;
 background: var(--primary-brand-color);
 line-height: 1.2;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
 }
 
+.hero-button:hover,
+.hero-button:active{
+background-color: #404BBF;
+cursor: pointer;
+}
 
 /* Advantages of working with WebStudio */
 .advature{
-font-weight: 600;
+font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+color: var(--dark-title-main-color);
 }
 
 
@@ -144,18 +158,34 @@ letter-spacing: 0.02em;
 .team{
 background-color: #F4F4FD;
 }
+.name{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+}
 
 
 /* portfolio.html main */
-.list .button{
+.filter{
 color: var(--primary-brand-color);
 background-color: var(--filter-bgd-color);
+font-family: var(--main-font-family);
 }
 
-.list .button:hover,
-.list .button:active{
+.filter:hover,
+.filter:active{
 color: white;
 background-color: var(--primary-brand-color);
+}
+
+.portfolio-list{
+font-family: var(--main-font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--dark-title-main-color);
 }
 
 
@@ -167,3 +197,4 @@ background-color: var(--dark-bgd-color);
 .footer-text{
 color: var(--footer-p-color);
 }
+
