@@ -15,8 +15,19 @@
 body{
 color: var(--dark-title-main-color-color);
 font-family: var(--main-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul{
 margin: 0;
 }
+
 
 .text{
 color: var(--p-color);
@@ -60,13 +71,15 @@ cursor: pointer;
 /* LOGO */
 .logo{
 font-family: var(--logo-font-family);
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.3;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-brand-color);
+padding-top: 24px;
+padding-bottom: 24px;
+
 }
 
 .logo-black{
@@ -84,10 +97,21 @@ line-height: 1.1;
 letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
 }
-    
 
 /* header */
 /* Навигация */
+
+.container {
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+align-items: baseline;
+border-bottom: 1px solid #E7E9FC;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+}
+
+
 .link-nav{
 font-weight: 500;
 font-size: 16px;
@@ -100,6 +124,25 @@ color: var(--dark-title-main-color);
 .link-nav:focus{
 color: var(--primary-brand-color);
 }
+
+.nav-container{
+display: flex;
+align-items: baseline;
+
+}
+
+.container-list{
+display: flex;
+margin-left: 76px;
+gap:40px;
+}
+
+.item{
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+
 
 /* Контакты */
 .link-contact{
@@ -114,10 +157,24 @@ color: var(--p-color);
 color: var(--primary-brand-color);
 }
 
+.contacts-list{
+display: flex;
+gap:40px;
+margin-left: auto;
+}
+
+.contacts-list-item{
+padding-top: 24px;
+padding-bottom: 24px;
+}
+
+
 /* index.html main */
 /* Effective Solutions for Your Business */
+
 .hero{
 background-color: var(--dark-bgd-color);
+text-align: center;
 }
 
 .hero-title{
@@ -126,6 +183,8 @@ font-weight: 600;
 font-size: 56px;
 line-height: 1 ;
 letter-spacing: 0.02em;
+margin-bottom: 48px;
+padding-top: 188px;
 }
 
 .hero-button{
@@ -136,6 +195,12 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
+border-radius: 4px;
+padding: 16px 32px;
+}
+
+.container-button{
+padding-bottom: 188px;
 }
 
 .hero-button:hover,
@@ -153,30 +218,119 @@ letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
 }
 
+.advature-container{
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+gap: 24px;
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.text-advature{
+width: 264px;
+margin-top: 8px;
+}
+
+
+
+/* What we are doing */
+
+.what-title{
+justify-content: space-around;
+text-align: center;
+}
+
+
+.foto-container{
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+gap: 24px;
+margin-top: 72px;
+padding-bottom: 120px;
+}
+
+.foto{
+
+display: block;
+max-width: 100%;
+height: auto;
+}
+
 
 /* Our Team */
+
 .team{
 background-color: #F4F4FD;
 }
+
 .name{
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+text-align: center;
+margin-top: 32px;
+margin-bottom: 8px;
 }
 
+.position{
+text-align: center;
+margin-bottom: 32px;
+}
+
+.team-title{
+text-align: center;
+padding-top: 120px;
+}
+
+.team-container{
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+align-items: center;
+gap: 24px;
+padding-bottom: 120px;
+}
+
+.team-foto{
+margin-top: 120px;
+display: block;
+max-width: 100%;
+height: auto;
+background-color: white;
+}
 
 /* portfolio.html main */
+
+
 .filter{
 color: var(--primary-brand-color);
 background-color: var(--filter-bgd-color);
 font-family: var(--main-font-family);
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+padding: 12px 24px;
 }
 
 .filter:hover,
 .filter:active{
 color: white;
 background-color: var(--primary-brand-color);
+}
+
+.filter-container{
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+justify-content: center;
+gap: 24px;
+padding-top: 96px;
 }
 
 .portfolio-list{
@@ -186,6 +340,30 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
+margin-top: 32px;
+margin-bottom: 8px;
+margin-left: 16px;
+}
+
+.vector{
+margin-left: 16px;
+margin-bottom: 32px;
+}
+
+.container-works{
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+flex-wrap: wrap;
+gap: 48px 24px;
+padding-top: 72px;
+padding-bottom: 120px;
+}
+
+.one-work{
+background-color: white;
+border-bottom: 1px solid #E7E9FC;
 }
 
 
@@ -196,5 +374,17 @@ background-color: var(--dark-bgd-color);
 
 .footer-text{
 color: var(--footer-p-color);
+width: 264px;
+padding-bottom: 100px;
+padding-top: 16px;
 }
 
+.footer-container{
+display: flex;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+align-items: flex-start;
+flex-direction: column;
+padding-top: 100px;
+}
