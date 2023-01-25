@@ -26,7 +26,7 @@ h6,
 p,
 ul{
 margin: 0;
-}
+padding: 0;}
 
 
 .text{
@@ -68,6 +68,12 @@ letter-spacing: 0.04em;
 cursor: pointer;
 }
 
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 /* LOGO */
 .logo{
 font-family: var(--logo-font-family);
@@ -77,8 +83,6 @@ line-height: 1.3;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-brand-color);
-padding-top: 24px;
-padding-bottom: 24px;
 
 }
 
@@ -99,18 +103,23 @@ color: var(--dark-title-main-color);
 }
 
 /* header */
-/* Навигация */
 
-.container {
+.container-header{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 align-items: baseline;
 border-bottom: 1px solid #E7E9FC;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
+.container-header-nav{
+display: flex;
+align-items: baseline;
+}
+
+.container-nav-list{
+display: flex;
+margin-left: 76px;
+gap: 40px;
+}
 
 .link-nav{
 font-weight: 500;
@@ -125,17 +134,7 @@ color: var(--dark-title-main-color);
 color: var(--primary-brand-color);
 }
 
-.nav-container{
-display: flex;
-align-items: baseline;
 
-}
-
-.container-list{
-display: flex;
-margin-left: 76px;
-gap:40px;
-}
 
 .item{
 padding-top: 24px;
@@ -163,18 +162,14 @@ gap:40px;
 margin-left: auto;
 }
 
-.contacts-list-item{
-padding-top: 24px;
-padding-bottom: 24px;
-}
-
-
 /* index.html main */
 /* Effective Solutions for Your Business */
 
 .hero{
 background-color: var(--dark-bgd-color);
 text-align: center;
+padding-top: 188px;
+padding-bottom: 188px;
 }
 
 .hero-title{
@@ -184,7 +179,6 @@ font-size: 56px;
 line-height: 1 ;
 letter-spacing: 0.02em;
 margin-bottom: 48px;
-padding-top: 188px;
 }
 
 .hero-button{
@@ -210,6 +204,12 @@ cursor: pointer;
 }
 
 /* Advantages of working with WebStudio */
+
+.adveture-section{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
 .advature{
 font-weight: 500;
 font-size: 20px;
@@ -218,14 +218,9 @@ letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
 }
 
-.advature-container{
+.advature-list{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 gap: 24px;
-padding-top: 120px;
-padding-bottom: 120px;
 }
 
 .text-advature{
@@ -233,38 +228,37 @@ width: 264px;
 margin-top: 8px;
 }
 
-
-
 /* What we are doing */
 
-.what-title{
+.title-what{
 justify-content: space-around;
 text-align: center;
+margin-bottom: 72px;
 }
-
 
 .foto-container{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 gap: 24px;
-margin-top: 72px;
 padding-bottom: 120px;
 }
 
 .foto{
-
 display: block;
 max-width: 100%;
 height: auto;
 }
 
-
 /* Our Team */
 
 .team{
 background-color: #F4F4FD;
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.name-position{
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .name{
@@ -273,28 +267,21 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: center;
-margin-top: 32px;
 margin-bottom: 8px;
 }
 
 .position{
 text-align: center;
-margin-bottom: 32px;
 }
 
 .team-title{
 text-align: center;
-padding-top: 120px;
 }
 
 .team-container{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 align-items: center;
 gap: 24px;
-padding-bottom: 120px;
 }
 
 .team-foto{
@@ -303,11 +290,16 @@ display: block;
 max-width: 100%;
 height: auto;
 background-color: white;
+border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* portfolio.html main */
 
-
+.main{
+padding-top: 96px;
+padding-bottom: 120px;
+}
 .filter{
 color: var(--primary-brand-color);
 background-color: var(--filter-bgd-color);
@@ -323,14 +315,11 @@ color: white;
 background-color: var(--primary-brand-color);
 }
 
-.filter-container{
+.filter-list{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 justify-content: center;
 gap: 24px;
-padding-top: 96px;
+margin-bottom: 72px;
 }
 
 .portfolio-list{
@@ -340,25 +329,20 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
-margin-top: 32px;
 margin-bottom: 8px;
-margin-left: 16px;
 }
 
-.vector{
-margin-left: 16px;
-margin-bottom: 32px;
+.name-product{
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
-.container-works{
+
+
+.list-work{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 flex-wrap: wrap;
 gap: 48px 24px;
-padding-top: 72px;
-padding-bottom: 120px;
 }
 
 .one-work{
@@ -370,21 +354,18 @@ border-bottom: 1px solid #E7E9FC;
 /* footer */
 .footer{
 background-color: var(--dark-bgd-color);
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .footer-text{
 color: var(--footer-p-color);
 width: 264px;
-padding-bottom: 100px;
-padding-top: 16px;
+margin-top: 16px;
 }
 
 .footer-container{
 display: flex;
-max-width: 1158px;
-padding: 0 15px;
-margin: 0 auto;
 align-items: flex-start;
 flex-direction: column;
-padding-top: 100px;
 }
