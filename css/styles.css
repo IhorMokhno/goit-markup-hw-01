@@ -243,6 +243,22 @@ width: 264px;
 margin-top: 8px;
 }
 
+.icon-adventure{
+width: 64px;
+height: 64px;  
+}
+       
+.one-adventure-container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 264px;
+height: 112px;
+background: #F4F4FD;
+border-radius: 4px;
+margin-bottom: 8px;
+}
+
 /* What we are doing */
 
 .what-ar-w-doing{
@@ -309,6 +325,28 @@ border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.social-net{
+width: 16px;
+height: 16px;
+}
+
+.social-link{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--primary-brand-color);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+.social-net-list{
+display: flex;
+justify-content: center;
+gap: 24px;
+margin-top: 8px;
+}
+
 /* portfolio.html main */
 
 .main{
@@ -364,9 +402,6 @@ flex-wrap: wrap;
 gap: 48px 24px;
 }
 
-
-
-
 /* footer */
 .footer{
 background-color: var(--dark-bgd-color);
@@ -383,14 +418,86 @@ margin-top: 16px;
 .footer-container{
 display: flex;
 align-items: flex-start;
+flex-direction: row;
+}
+
+.footer-container-second{
+    display: flex;
+align-items: flex-start;
 flex-direction: column;
 }
 
+.footer-net-list{
+width: 24px;
+height: 24px;
+display: flex;
+}
+
+.footer-net-item{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.1);
+display: flex;
+justify-content: center;
+align-items: center;
 
 
+}
 
-.svg-astronaut {
-    display: block;
-     margin-left: auto;
-     margin-right: auto;
-    }
+.footer-container-second{
+    margin-right: 120px;
+}
+
+.social-media-list{
+display: flex;
+gap: 16px;
+}
+
+.social-media-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-bottom: 16px;
+    
+}
+
+/* Customers */
+
+.client{
+width: 104px;
+height: 56px;
+}
+
+.client-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
+
+.customers-list{
+    display: flex;
+    gap: 24px;
+}
+
+.customers-title{
+justify-content: space-around;
+text-align: center;
+margin-bottom: 72px;
+font-family: var(--main-font-family);
+letter-spacing: 0.02em;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+}
+
+.customers{
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
