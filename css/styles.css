@@ -16,6 +16,7 @@
 body{
 color: var(--dark-title-main-color-color);
 font-family: var(--main-font-family);
+padding-top: 74px;
 }
 
 h1,
@@ -70,9 +71,9 @@ cursor: pointer;
 }
 
 .container{
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
 }
 
 /* LOGO */
@@ -84,7 +85,6 @@ line-height: 1.3;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primary-brand-color);
-
 }
 
 .logo-black{
@@ -105,10 +105,21 @@ color: var(--dark-title-main-color);
 
 /* header */
 
+.header{
+position: fixed;
+top: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+
 .container-header{
 display: flex;
 align-items: baseline;
 border-bottom: 1px solid #E7E9FC;
+
 }
 
 .container-header-nav{
@@ -128,6 +139,26 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
+
+transition-property: color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.link-nav.current::after{
+content: '';
+position: absolute;
+display: block;
+width: 100%;
+height: 4px;
+background: #404BBF;
+border-radius: 2px;
+bottom: 0;
+}
+
+.link-nav.current{
+color: var(--primary-brand-color);
 }
 
 .link-nav:hover,
@@ -135,11 +166,10 @@ color: var(--dark-title-main-color);
 color: var(--primary-brand-color);
 }
 
-
-
 .item{
 padding-top: 24px;
 padding-bottom: 24px;
+position: relative;
 }
 
 /* Контакты */
@@ -148,10 +178,15 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--p-color);
+
+transition-property: color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .link-contact:hover,
-.link-contact:active{
+.link-contact:focus{
 color: var(--primary-brand-color);
 }
 
@@ -160,6 +195,13 @@ display: flex;
 gap:40px;
 margin-left: auto;
 }
+
+.header-full{
+    width: 1440px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
 
 /* index.html main */
 /* Effective Solutions for Your Business */
@@ -206,17 +248,24 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 border-radius: 4px;
 padding: 16px 32px;
+
+transition-property: background-color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-button{
-padding-bottom: 188px;
-}
 
 .hero-button:hover,
 .hero-button:active{
 background-color: #404BBF;
 cursor: pointer;
 }
+
+
+.container-button{
+padding-bottom: 188px;
+}
+
 
 /* Advantages of working with WebStudio */
 
@@ -338,6 +387,11 @@ background-color: var(--primary-brand-color);
 width: 40px;
 height: 40px;
 border-radius: 50%;
+
+transition-property: background-color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .social-link:hover{
@@ -364,6 +418,10 @@ font-family: var(--main-font-family);
 border: 1px solid #E7E9FC;
 border-radius: 4px;
 padding: 12px 24px;
+
+transition-property: color, background-color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover,
@@ -396,19 +454,60 @@ padding-left: 16px;
 border: 1px solid #E7E9FC;
 border-top: none;
 background-color: white;
+
 }
-
-
 
 .list-work{
 display: flex;
 flex-wrap: wrap;
 gap: 48px 24px;
 }
+
+.portfolio-work-item{
+position: relative;
+}
+
 .portfolio-work-item:hover,
 .portfolio-work-item:focus{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
+.portfolio-work-item:hover .text-above{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-work-item:hover::before{
+opacity: 1;
+transform: translateY(0);
+}
+
+.portfolio-work-item::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 300px;
+top: 0;
+background-color: var(--primary-brand-color);
+opacity: 1;
+transform: translateY(100%);
+transition-duration: 2000ms;
+
+
+}
+
+.text-above{
+position: absolute;
+top: 40px;
+left: 32px;
+width: 296px;
+color: var(--white-logo-color);
+opacity: 1;
+transform: translateY(300%);
+transition-duration: 2000ms;
+}
+
 
 /* footer */
 .footer{
@@ -430,7 +529,7 @@ flex-direction: row;
 }
 
 .footer-container-second{
-    display: flex;
+display: flex;
 align-items: flex-start;
 flex-direction: column;
 }
@@ -449,15 +548,18 @@ background: rgba(255, 255, 255, 0.1);
 display: flex;
 justify-content: center;
 align-items: center;
+
+transition-property: background-color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-net-item:hover{
 background-color: #31D0AA; 
 }
 
-
-
 .footer-container-second{
-    margin-right: 120px;
+margin-right: 120px;
 }
 
 .social-media-list{
@@ -466,12 +568,12 @@ gap: 16px;
 }
 
 .social-media-title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    padding-bottom: 16px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
     
 }
 
@@ -480,27 +582,39 @@ gap: 16px;
 .client{
 width: 104px;
 height: 56px;
-fill: #8e8f99;
+fill: currentColor;
+
 }
-.client-cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    width: 168px;
-    height: 88px;
+
+.client-link{
+display: flex;
+justify-content: center;
+align-items: center;
+
+border: 1px solid #8E8F99;
+border-radius: 4px;
+width: 168px;
+height: 88px;
+color: #8E8F99;
+
+transition-property: color, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.client-cont:hover{
+
+.client-link:hover{
 border-color: #404BBF;
+color: #404BBF;
 }
+
 .client:hover{
-    fill: #404BBF;
+fill: #404BBF;
 }
 
 .customers-list{
-    display: flex;
-    gap: 24px;
+display: flex;
+gap: 24px;
 }
 
 .customers-title{
@@ -515,6 +629,8 @@ line-height: 1.1;
 }
 
 .customers{
-    padding-top: 130px;
-    padding-bottom: 120px;
+padding-top: 130px;
+padding-bottom: 120px;
 }
+
+
