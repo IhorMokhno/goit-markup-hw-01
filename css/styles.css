@@ -266,7 +266,6 @@ cursor: pointer;
 padding-bottom: 188px;
 }
 
-
 /* Advantages of working with WebStudio */
 
 .adveture-section{
@@ -454,7 +453,7 @@ padding-left: 16px;
 border: 1px solid #E7E9FC;
 border-top: none;
 background-color: white;
-
+position: relative;
 }
 
 .list-work{
@@ -465,6 +464,7 @@ gap: 48px 24px;
 
 .portfolio-work-item{
 position: relative;
+overflow: hidden;
 }
 
 .portfolio-work-item:hover,
@@ -474,8 +474,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 
 .portfolio-work-item:hover .text-above{
-    opacity: 1;
-    transform: translateY(0);
+opacity: 1;
+transform: translateY(0);
 }
 
 .portfolio-work-item:hover::before{
@@ -490,12 +490,14 @@ width: 100%;
 height: 300px;
 top: 0;
 background-color: var(--primary-brand-color);
-opacity: 1;
+opacity: 0;
 transform: translateY(100%);
-transition-duration: 2000ms;
-
+transition-property: opacity, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 
 .text-above{
 position: absolute;
@@ -503,10 +505,13 @@ top: 40px;
 left: 32px;
 width: 296px;
 color: var(--white-logo-color);
-opacity: 1;
+opacity: 0;
 transform: translateY(300%);
-transition-duration: 2000ms;
+transition-property: opacity, transform;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 /* footer */
@@ -527,6 +532,7 @@ display: flex;
 align-items: flex-start;
 flex-direction: row;
 }
+
 
 .footer-container-second{
 display: flex;
@@ -633,4 +639,36 @@ padding-top: 130px;
 padding-bottom: 120px;
 }
 
+.backdrop{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(46, 47, 66, 0.4);
+z-index: 99999;
+}
 
+
+.modal{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+width: 408px;
+height: 576px;
+background: #FCFCFC;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.modal-button{
+position: absolute;
+top: 24px;
+right: 24px;
+width: 24px;
+height: 24px;
+border-radius: 50%;
+background: #E7E9FC;
+border: 1px solid rgba(0, 0, 0, 0.1);
+}
