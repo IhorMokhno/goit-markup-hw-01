@@ -141,8 +141,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--dark-title-main-color);
 
-transition-property: color, transform;
-transition-duration: ;
+transition-property: color;
+transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 
 }
@@ -180,7 +180,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--p-color);
 
-transition-property: color, transform;
+transition-property: color;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 
@@ -250,7 +250,7 @@ letter-spacing: 0.04em;
 border-radius: 4px;
 padding: 16px 32px;
 
-transition-property: background-color, transform;
+transition-property: background-color;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 }
@@ -388,7 +388,7 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 
-transition-property: background-color, transform;
+transition-property: background-color;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 }
@@ -419,7 +419,7 @@ border: 1px solid #E7E9FC;
 border-radius: 4px;
 padding: 12px 24px;
 
-transition-property: color, background-color, transform;
+transition-property: color, background-color;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 }
@@ -493,7 +493,7 @@ top: 0;
 background-color: var(--primary-brand-color);
 opacity: 0;
 transform: translateY(100%);
-transition-property: opacity, transform;
+transition-property: opacity;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 }
@@ -507,7 +507,7 @@ width: 296px;
 color: var(--white-logo-color);
 opacity: 0;
 transform: translateY(300%);
-transition-property: opacity, transform;
+transition-property: opacity;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 }
@@ -555,7 +555,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-transition-property: background-color, transform;
+transition-property: background-color;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 }
@@ -600,7 +600,7 @@ width: 168px;
 height: 88px;
 color: #8E8F99;
 
-transition-property: color, transform;
+transition-property: color, border-color;
 transition-duration:var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
 
@@ -660,6 +660,7 @@ border-radius: 4px;
 transition: transform;
 transition-duration: var(--standart-duration);
 transition-timing-function: var(--stndart-timing-function);
+
 }
 
 .modal-button{
@@ -674,6 +675,26 @@ height: 24px;
 border-radius: 50%;
 background: #E7E9FC;
 border: 1px solid rgba(0, 0, 0, 0.1);
+
+transition: color, background-color;
+transition-duration: var(--standart-duration);
+transition-timing-function: var(--stndart-timing-function);
+}
+
+.modal-button:hover{
+background-color: #404BBF;
+color: #FFFFFF;
+}
+
+.close-icon{
+  fill: currentColor;
+  width: 8px;
+  height: 8px;
+}
+
+
+.close-icon:hover{
+fill: white;
 }
 
 .backdrop.is-hidden{
