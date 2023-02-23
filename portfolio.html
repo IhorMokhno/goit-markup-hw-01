@@ -14,6 +14,7 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
@@ -24,10 +25,10 @@
 
     <div class="header-fixed">
 
-      <div class="container container-header">
+      <div class="container container-header flex">
         <nav class="container-header-nav">
 
-          <a href="" class="link logo">
+          <a href="" class="link logo header-logo">
             <span>WEB</span><span class="logo-black">STUDIO</span>
           </a>
 
@@ -57,7 +58,15 @@
           </li>
 
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
       </div>
+      
 
     </div>
 
@@ -78,7 +87,7 @@
         <ul class="list filter-list">
 
           <li>
-            <button type="button" class="button filter">All</button>
+            <button type="button" class="button filter button-filter">All</button>
           </li>
           <li>
             <button type="button" class="button filter">Web Site</button>
@@ -100,10 +109,14 @@
           <li class="portfolio-work-item">
             <a href="" class="link">
 
-              <img src="./images/portfolio/img1.jpg" alt="Bank application layout" width="360" style="
+              <img srcset="../images/portfolio/imgmob1@1x.webp 370w,
+              ../images/portfolio/imgmob1@2x.webp 418w"
+              sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img1.webp" alt="Bank application layout"  style="
                     display: block;
-                    max-width: 100%;
                     height: auto;">
+
+                    
 
               <div class="name-product">
 
@@ -121,9 +134,11 @@
           <li class="portfolio-work-item">
             <a href="" class="link ">
 
-              <img src="./images/portfolio/img2.jpg" alt="Phone scanning qr code" width="360" style="
+              <img srcset="../images/portfolio/imgmob2@1x.webp 370w,
+                            ../images/portfolio/imgmob2@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img2.webp" alt="Phone scanning qr code" style="
                       display: block;
-                      max-width: 100%;
                       height: auto;">
 
               <div class="name-product">
@@ -138,9 +153,12 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link ">
-              <img src="./images/portfolio/img3.jpg" alt="Laptop and phone with open meditation App" width="360" style="
+              
+              <img srcset="../images/portfolio/imgmob3@1x.webp 370w,
+                            ../images/portfolio/imgmob3@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img3.webp" alt="Laptop and phone with open meditation App"  style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -156,9 +174,12 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link">
-              <img src="./images/portfolio/img4.jpg" alt="taxi driver" width="360" style="
+              
+              <img srcset="../images/portfolio/imgmob4@1x.webp 370w,
+                            ../images/portfolio/imgmob4@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img4.webp" alt="taxi driver" style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -174,9 +195,12 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link">
-              <img src="./images/portfolio/img5.jpg" alt="Design of phone screen" width="360" style="
+              
+              <img srcset="../images/portfolio/imgmob5@1x.webp 370w,
+                            ../images/portfolio/imgmob5@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img5.webp" alt="Design of phone screen"  style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -192,9 +216,12 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link">
-              <img src="./images/portfolio/img6.jpg" alt="Girl listens to information" width="360" style="
+              
+              <img srcset="../images/portfolio/imgmob6@1x.webp 370w,
+                            ../images/portfolio/imgmob6@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img6.webp" alt="Girl listens to information"  style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -210,9 +237,12 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link">
-              <img src="./images/portfolio/img7.jpg" alt="Instagram storшуы design layout" width="360" style="
+              
+              <img srcset="../images/portfolio/imgmob7@1x.webp 370w,
+                            ../images/portfolio/imgmob7@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img7.webp" alt="Instagram storшуы design layout" style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -228,9 +258,13 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link">
-              <img src="./images/portfolio/img8.jpg" alt="Walking woman with fresh vegetables" width="360" style="
+              
+              
+              <img srcset="../images/portfolio/imgmob8@1x.webp 370px,
+                            ../images/portfolio/imgmob8@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img8.webp" alt="Walking woman with fresh vegetables"  style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -246,9 +280,13 @@
 
           <li class="portfolio-work-item">
             <a href="" class="link">
-              <img src="./images/portfolio/img9.jpg" alt="Сoffee making" width="360" style="
+              
+            
+              <img srcset="../images/portfolio/imgmob9@1x.webp 370w,
+                            ../images/portfolio/imgmob9@2x.webp 418w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
+              src="./images/portfolio/img9.webp" alt="Сoffee making" style="
                       display: block;
-                      max-width: 100%;
                       height: auto;
                       ">
 
@@ -268,97 +306,174 @@
 
     </section>
 
-  </main>
-
-  <!--Footer section-->
-  <footer class="footer">
-
-    <div class="container footer-container">
-
-      <div class="footer-container-second">
-        <a href="" class="link logo">
-          <span>WEB</span><span class="logo-white">STUDIO</span>
-        </a>
-
-
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-        </p>
-      </div>
-
-
-
-      <div>
-
-        <h4 class="social-media-title">
-          Social media
-        </h4>
-
-        <ul class="list social-media-list">
-
-          <li class="footer-net-item">
-            <a class="link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
-              rel="noopener noreferrer">
-
-              <svg class="footer-net-list">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-
-          </li>
-          <li class="footer-net-item">
-            <a class="link" href="https://twitter.com/home" aria-label="Twitter" target="_blank"
-              rel="noopener noreferrer">
-
-              <svg class="footer-net-list">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-net-item">
-            <a class="link" href="https://uk-ua.facebook.com/" aria-label="Facebook" target="_blank"
-              rel="noopener noreferrer">
-
-              <svg class="footer-net-list">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-net-item">
-            <a class="link" href="https://ua.linkedin.com/" aria-label="Linkedin" target="_blank"
-              rel="noopener noreferrer">
-
-              <svg class="footer-net-list">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="cont-footer-modal">
-        <h4 class="footer-modal-title">
-          Subscribe
-        </h4>
-        <form action="">
-          <label class="subscribe-label">
-            <input type="mail" placeholder="E-mail" name="email" class="subscribe-input" required>
-            <button type="submit" class="footer-modal-button">
-              <span>Subscribe</span>
-              <svg class="footer-subscribe-icon">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </label>
-
-        </form>
-      </div>
+    <!--Modal mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu" js-close-menu>
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <ul class="list nav-container-menu">
+        <li class="nav-mob-item"><a href="./index.html" class="link nav-modal-menu">Studio</a></li>
+        <li class="nav-mob-item"><a href="./portfolio.html" class="link nav-modal-menu">Portfolio</a></li>
+        <li class="nav-mob-item"><a href="" class="link nav-modal-menu nav-modal-contact">Contacts</a></li>
+      </ul>
+    
+      <ul class="list contacts-list-menu">
+    
+        <li class="contacts-item-menu">
+          <a href="tel:+110001111111" class="link link-contact nav-modal-contact">+11 (000) 111-11-11</a>
+        </li>
+    
+        <li>
+          <a href="mailto:info@devstudio.com" class="link link-contact">info@devstudio.com</a>
+        </li>
+    
+      </ul>
+    
+      <ul class="list social-nav-list">
+    
+        <li class="social-item-link">
+          <a class="link social-link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
+            rel="noopener noreferrer">
+    
+            <svg class="social-net">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+    
+        <li>
+          <a class="link social-link" href="https://twitter.com/home" aria-label="Twitter" target="_blank"
+            rel="noopener noreferrer">
+    
+            <svg class="social-net">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+    
+        <li>
+          <a class="link social-link" href="https://uk-ua.facebook.com/" aria-label="Facebook" target="_blank"
+            rel="noopener noreferrer">
+    
+            <svg class="social-net">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+    
+        <li>
+          <a class="link social-link" href="https://ua.linkedin.com/" aria-label="Linkedin" target="_blank"
+            rel="noopener noreferrer">
+    
+            <svg class="social-net">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+    
+      </ul>
     </div>
 
-  </footer>
+  </main>
 
+<footer class="footer">
+
+  <div class="container footer-container">
+
+    <div class="footer-container-second">
+      <a href="" class="link logo">
+        <span>WEB</span><span class="logo-white">STUDIO</span>
+      </a>
+
+
+      <p class="footer-text">
+        Increase the flow of customers and sales for your business with digital marketing & growth
+        solutions.
+      </p>
+    </div>
+
+
+
+    <div class="footer-container-third">
+
+      <h4 class="social-media-title">
+        Social media
+      </h4>
+
+      <ul class="list social-media-list">
+
+        <li class="footer-net-item">
+          <a class="link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
+            rel="noopener noreferrer">
+
+            <svg class="footer-net-list">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+
+        </li>
+        <li class="footer-net-item">
+          <a class="link" href="https://twitter.com/home" aria-label="Twitter" target="_blank"
+            rel="noopener noreferrer">
+
+            <svg class="footer-net-list">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-net-item">
+          <a class="link" href="https://uk-ua.facebook.com/" aria-label="Facebook" target="_blank"
+            rel="noopener noreferrer">
+
+            <svg class="footer-net-list">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-net-item">
+          <a class="link" href="https://ua.linkedin.com/" aria-label="Linkedin" target="_blank"
+            rel="noopener noreferrer">
+
+            <svg class="footer-net-list">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="cont-footer-modal">
+      <h4 class="footer-modal-title">
+        Subscribe
+      </h4>
+      <form action="">
+        <label class="subscribe-label">
+          <input type="mail" placeholder="E-mail" name="email" class="subscribe-input" required>
+          <button type="submit" class="footer-modal-button">
+            <span>Subscribe</span>
+            <svg class="footer-subscribe-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </label>
+    
+      </form>
+    </div>
+
+
+  </div>
+
+</footer>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
