@@ -1315,16 +1315,21 @@ font-family: var(--main-font-family);
 @media screen and (max-width: 767px) {
 .footer-container {
 justify-content: center;
-     }
+}
 }    
 
 @media screen and (min-width: 768px) {
     .footer-container {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         flex-direction: row;
         gap: 0 24px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-container {
+            justify-content: space-between;
     }
 }
 
