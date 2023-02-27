@@ -59,11 +59,9 @@
 
         </ul>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
-          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"></path>
-          </svg>
+                                <svg class="icon-menu-hamburger" width="32" height="22" aria-label="Toggle mobile menu">
+                                  <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                                </svg>
         </button>
       </div>
       
@@ -283,7 +281,7 @@
               
             
               <img srcset="./images/portfolio/imgmob9@1x.webp 370w,
-                            ./images/portfolio/imgmob9@2x.webp 418w"
+                            ../images/portfolio/imgmob9@2x.webp 418w"
                 sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
               src="./images/portfolio/img9.webp" alt="Сoffee making" style="
                       display: block;
@@ -317,8 +315,8 @@
       </button>
       <ul class="list nav-container-menu">
         <li class="nav-mob-item"><a href="./index.html" class="link nav-modal-menu">Studio</a></li>
-        <li class="nav-mob-item"><a href="./portfolio.html" class="link nav-modal-menu">Portfolio</a></li>
-        <li class="nav-mob-item"><a href="" class="link nav-modal-menu nav-modal-contact">Contacts</a></li>
+        <li class="nav-mob-item"><a href="./portfolio.html" class="link nav-modal-menu nav-modal-contact">Portfolio</a></li>
+        <li class="nav-mob-item"><a href="" class="link nav-modal-menu ">Contacts</a></li>
       </ul>
     
       <ul class="list contacts-list-menu">
@@ -452,7 +450,7 @@
       <h4 class="footer-modal-title">
         Subscribe
       </h4>
-      <form action="">
+      <form action="" class="form">
         <label class="subscribe-label">
           <input type="mail" placeholder="E-mail" name="email" class="subscribe-input" required>
           <button type="submit" class="footer-modal-button">

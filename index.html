@@ -59,11 +59,9 @@
                 </ul>
 
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
+                                <svg class="icon-menu-hamburger" width="32" height="22" aria-label="Toggle mobile menu">
+                                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
+                                </svg>
                 </button>
 
             </div>
@@ -231,13 +229,14 @@
                     ./images/ourteam/img1@2x.webp 418w,"
                     sizes=" (min-width: 768px) 370px, (min-width: 480px) 418px, 100vw"
                     src="./images/ourteam/img1.webp" alt="Mark Guerrero" style="display: block;
-                                    height: auto;" class="avatar">
+                        width: 264px;
+                                    height: auto;" >
 
                 <div class="name-position">
                     <h3 class="name">Mark Guerrero</h3>
                     <p class="text position">Product Designer</p>
 
-                    <ul class="list social-net-list">
+                    <ul class="list social-nav-list">
 
                         <li class="social-item-link">
                             <a class="link social-link" href="https://www.instagram.com/" aria-label="Instagram"
@@ -288,6 +287,7 @@
                                                             ./images/ourteam/img2@2x.webp 418w,"
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 370px, (min-width: 480px) 418px, 100vw"
                     src="./images/ourteam/img2.webp" alt="Tom Ford" style="display: block;
+                        width: 264px;
                                     height: auto;" class="avatar">
 
                 <div class="name-position">
@@ -347,6 +347,7 @@
                                                             ./images/ourteam/img3@2x.webp 418w,"
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 370px, (min-width: 480px) 418px, 100vw"
                     src="./images/ourteam/img3.webp" alt="Camila Garcia" style="display: block;
+                        width: 264px;
                                     height: auto;" class="avatar">
 
                 <div class="name-position">
@@ -407,6 +408,7 @@
                     sizes="(min-width: 1200px) 370px, (min-width: 768px) 370px, (min-width: 480px) 418px, 100vw"
                     src="./images/ourteam/img4.webp" alt="Daniel Wilson" 
                      style="display: block;
+                         width: 264px;
                     height: auto;"
                     class="avatar">
 
@@ -540,69 +542,68 @@
             </svg>
         </button>
         <ul class="list nav-container-menu">
-            <li class="nav-mob-item"><a href="./index.html" class="link nav-modal-menu">Studio</a></li>
-            <li class="nav-mob-item"><a href="./portfolio.html"  class="link nav-modal-menu">Portfolio</a></li>
-            <li class="nav-mob-item"><a href=""  class="link nav-modal-menu nav-modal-contact">Contacts</a></li>
+            <li class="nav-mob-item"><a href="./index.html" class="link nav-modal-menu nav-modal-contact">Studio</a></li>
+            <li class="nav-mob-item"><a href="./portfolio.html" class="link nav-modal-menu">Portfolio</a></li>
+            <li class="nav-mob-item"><a href="" class="link nav-modal-menu ">Contacts</a></li>
         </ul>
-
+    
         <ul class="list contacts-list-menu">
-        
+    
             <li class="contacts-item-menu">
                 <a href="tel:+110001111111" class="link link-contact nav-modal-contact">+11 (000) 111-11-11</a>
             </li>
-            
+    
             <li>
                 <a href="mailto:info@devstudio.com" class="link link-contact">info@devstudio.com</a>
             </li>
-        
+    
         </ul>
-
-        <ul class="list social-nav-list">
-        
+    
+        <ul class="list social-menu-list">
+    
             <li class="social-item-link">
                 <a class="link social-link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank"
                     rel="noopener noreferrer">
-        
+    
                     <svg class="social-net">
                         <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                 </a>
             </li>
-        
+    
             <li>
                 <a class="link social-link" href="https://twitter.com/home" aria-label="Twitter" target="_blank"
                     rel="noopener noreferrer">
-        
+    
                     <svg class="social-net">
                         <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                 </a>
             </li>
-        
+    
             <li>
                 <a class="link social-link" href="https://uk-ua.facebook.com/" aria-label="Facebook" target="_blank"
                     rel="noopener noreferrer">
-        
+    
                     <svg class="social-net">
                         <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                 </a>
             </li>
-        
+    
             <li>
                 <a class="link social-link" href="https://ua.linkedin.com/" aria-label="Linkedin" target="_blank"
                     rel="noopener noreferrer">
-        
+    
                     <svg class="social-net">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                 </a>
             </li>
-        
+    
         </ul>
     </div>
 </main>
-<!--Footer section-->
 
 <footer class="footer">
 
@@ -672,27 +673,25 @@
 
         </div>
 
-<div class="cont-footer-modal">
-    <h4 class="footer-modal-title">
-        Subscribe
-    </h4>
-    <form action="">
-        <label class="subscribe-label">
-            <input type="mail" placeholder="E-mail" name="email" class="subscribe-input" required>
-            <button type="submit" class="footer-modal-button">
-                <span>Subscribe</span>
-                <svg class="footer-subscribe-icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-            </button>
-        </label>
+        <div class="cont-footer-modal">
+            <h4 class="footer-modal-title">
+                Subscribe
+            </h4>
+            <form action="" class="form">
+                <label class="subscribe-label">
+                    <input type="mail" placeholder="E-mail" name="email" class="subscribe-input" required>
+                    <button type="submit" class="footer-modal-button">
+                        <span>Subscribe</span>
+                        <svg class="footer-subscribe-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </label>
 
-    </form>
-</div>
-        
+            </form>
+        </div>
+
     </div>
-
-
 
 </footer>
 
@@ -705,7 +704,7 @@
                 <use href="./images/icons.svg#close-icon"></use>
             </svg>
         </button>
-        <form action="">
+        <form action="" class="form">
             <strong class="modal-title">Leave your contacts and we will call you back</strong>
 
             <label class="madal-label">
@@ -755,12 +754,6 @@
         </form>
     </div>
 </div>
-
-
-
-
-
-
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
